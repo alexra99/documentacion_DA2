@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MÓDULO GRAFO</title>
+
+
+
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="operaciones_grafo module" href="operaciones_grafo.html" />
+    <link rel="prev" title="src" href="modules.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+            <div class="wy-side-scroll">
+                <div class="wy-side-nav-search">
+
+
+
+                    <a href="index.html" class="icon icon-home"> Diseño de algoritmos grupo DA_2
+          
+
+          
+          </a>
+
+
+
+
+
+
+
+                    <div role="search">
+                        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+                            <input type="text" name="q" placeholder="Search docs" />
+                            <input type="hidden" name="check_keywords" value="yes" />
+                            <input type="hidden" name="area" value="default" />
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+
+
+
+
+                    <p class="caption"><a class="caption" href="index.html">VOLVER</a></p>
+                    <ul class="current">
+                        <li class="toctree-l1 current"><a class="reference internal" href="modules.html">MÓDULOS</a>
+                            <ul class="current">
+                                <li class="toctree-l2 current"><a class="current reference internal" href="grafo.html">grafo</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="operaciones_grafo.html">operaciones_grafo</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="parser_xml.html">parser_xml</a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+            <nav class="wy-nav-top" aria-label="top navigation">
+
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="index.html">Diseño de algoritmos grupo DA_2</a>
+
+            </nav>
+
+
+            <div class="wy-nav-content">
+
+                <div class="rst-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div role="navigation" aria-label="breadcrumbs navigation">
+
+                        <ul class="wy-breadcrumbs">
+
+                            <li>
+                                <a href="index.html" class="icon icon-home"></a> &raquo;</li>
+
+                            <li>IR A MENÚ</li>
+
+
+                            <li class="wy-breadcrumbs-aside">
+
+
+                                <a href="_sources/grafo.rst.txt" rel="nofollow"> View page source</a>
+
+
+                            </li>
+
+                        </ul>
+
+
+                        <hr/>
+                    </div>
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        <div itemprop="articleBody">
+
+                            <div class="section" id="module-grafo">
+                                <span id="grafo-module"></span>
+                                <h1>MÓDULO GRAFO<a class="headerlink" href="#module-grafo" title="Permalink to this headline">¶</a></h1>
+                                <p>Módulo contenedor de estructuras de datos.</p>
+                                <p>El coste de cada operación OE se encuentra como comentario en cada línea del código fuente.</p>
+
+                                <dl class="py class">
+                                    <dt id="grafo.Edge">
+<em class="property">class </em><code class="sig-prename descclassname">grafo.</code><code class="sig-name descname">Edge</code><a class="headerlink" href="#grafo.Edge" title="Permalink to this definition">¶</a></dt>
+                                    <dd>
+                                        <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                        <p>Clase para arcos</p>
+                                        <dl class="py attribute">
+                                            <dt id="grafo.Edge.length">
+<code class="sig-name descname">length</code><a class="headerlink" href="#grafo.Edge.length" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>self.osmid = “” self.ref = “” self.name = “” self.highway = “” self.junction = “” self.oneway = “” self.geometry = “” self.bridge = “”</p>
+                                            </dd>
+                                        </dl>
+
+                                    </dd>
+                                </dl>
+
+                                <dl class="py class">
+                                    <dt id="grafo.Graph">
+<em class="property">class </em><code class="sig-prename descclassname">grafo.</code><code class="sig-name descname">Graph</code><a class="headerlink" href="#grafo.Graph" title="Permalink to this definition">¶</a></dt>
+                                    <dd>
+                                        <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                        <p>Clase para el grafo</p>
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.add_edge">
+<code class="sig-name descname">add_edge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.add_edge" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Añade un arco dado al grafo</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.add_node">
+<code class="sig-name descname">add_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.add_node" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Añade un nodo dado al grafo</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.elegir_nodo_central">
+<code class="sig-name descname">elegir_nodo_central</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.elegir_nodo_central" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Selecciona el nodo con menor distancia hacia las hojas Complejidad: T(n) = (1+c) + (2+d) + (2+e) + 1 + m*((3+f*g) + 1 + 1 + 1) + 1 = # 24n^2*m^6 + 26n^2*m^5 + 252n*m^5 + 24n^3*m^5*log(n) + 6n^2*m^4 + 408n*m^4
+                                                    + 26n^3*m^4*log(n) + 12n^2*m^4*log(n) + # + 120m^4 + 198n*m^3 + 6n^3*m^3*log(n) + 28n^2*m^3*log(n) + 340m^3 + 30n*m^3 + 8n^2*m^2*log(n) + 220m^2 + 40m</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.get_adjacent">
+<code class="sig-name descname">get_adjacent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.get_adjacent" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Devuelve los nodos adyacentes al dado Complejidad: T(n) = 1 + n*(2 + m*(4 + 1)) + 1 = 5n*m+2n+2</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.get_adjacent_and_edges">
+<code class="sig-name descname">get_adjacent_and_edges</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodo</span></em>, <em class="sig-param"><span class="n">padre</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.get_adjacent_and_edges" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Similar a get_adjacent. Devuelve los nodos y arcos adjacentes a un nodo dado Complejidad: T(n) = 1 + n*(2 + m*(6 + 2)) + 1 = 8n*m+2n+2</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.get_edge">
+<code class="sig-name descname">get_edge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodo1</span></em>, <em class="sig-param"><span class="n">nodo2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.get_edge" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Si existe, devuelve el arco entre dos nodos, si no, devuelve 0 Complejidad: T(n) = n*(5 + 1) + 1 = 6n+1</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.get_internal_nodes">
+<code class="sig-name descname">get_internal_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.get_internal_nodes" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Obtiene los nodos internos Complejidad: T(n) = 1 + m*(1 + 1) + 1 = 2m+2</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.get_matriz">
+<code class="sig-name descname">get_matriz</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.get_matriz" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Obtiene la matriz de adyacencia de un nodo Complejidad: T(n) = m*(2 + 1) + 1 = 3m+1</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.kruskal">
+<code class="sig-name descname">kruskal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.kruskal" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Ejecuta el algoritmo de kruskal en el grafo Complejidad: T(n) = (1+c) + 1 + 1 + (m*2) + 1 + n*(2 + 1 + m*(1 + 1 + 1 + 1 +2) + 1 + 1 + 3) + 1 = 2n^2+8n*m+5n+2m+5</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py attribute">
+                                            <dt id="grafo.Graph.matriz">
+<code class="sig-name descname">matriz</code><a class="headerlink" href="#grafo.Graph.matriz" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>self.crs = “” self.simplified = False self.streets_per_node = “”</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.matriz_adyacencia">
+<code class="sig-name descname">matriz_adyacencia</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">internal</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.matriz_adyacencia" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Genera la matriz de adyacencia del grafo Complejidad: T(n) = 1 + m*(2+c) + 1 = 8n*m^2+2n*m+6</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.obtener_distancia">
+<code class="sig-name descname">obtener_distancia</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodo</span></em>, <em class="sig-param"><span class="n">padre</span></em><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.obtener_distancia" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Obtiene la distancia total de un nodo a todas las hojas Complejidad: T(n) = 1 + 2 + 1 + m*(2 + 8 + n*(m+n*log(n))) + 1 = n*m^2+m*n^2*log(n)+10m+5</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.pop_minor_node">
+<code class="sig-name descname">pop_minor_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.pop_minor_node" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Devuelve y elimina (pop) el nodo con menor distancia de la lista de nodos Complejidad: T(n) = 2 + m*(1 + 1) + 1 + 1 = 2m+4</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.prim">
+<code class="sig-name descname">prim</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.prim" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Ejecuta el algoritmo de prim en el grafo T(n) = 1 + 1 + m*((2+c) + 1 + n*((1+d) + 2 + (3+e) + 1 + 1 + 1 +2)) + 1 + 1 + m*(1 + (2+f)) + 1 = 10n^2*m^2+8n^2*m+2m^2+17n*m+11m+5</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.set_leaves">
+<code class="sig-name descname">set_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.set_leaves" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Setea las hojas de un grafo (nodos con un solo arco conectado) Complejidad: T(n) = m*(1 + 1 + n*(2 + 1 + 1)) = 4n*m+2m</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="py method">
+                                            <dt id="grafo.Graph.sort_edges">
+<code class="sig-name descname">sort_edges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#grafo.Graph.sort_edges" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>Ordena los arcos del grafo de menor a mayor Complejidad: T(n) = 1 + n*(2 + n*2) + 1 + 1 = 2n^2+2n+3</p>
+                                            </dd>
+                                        </dl>
+
+                                    </dd>
+                                </dl>
+
+                                <dl class="py class">
+                                    <dt id="grafo.Node">
+<em class="property">class </em><code class="sig-prename descclassname">grafo.</code><code class="sig-name descname">Node</code><a class="headerlink" href="#grafo.Node" title="Permalink to this definition">¶</a></dt>
+                                    <dd>
+                                        <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                        <p>Clase para nodos</p>
+                                        <dl class="py attribute">
+                                            <dt id="grafo.Node.central">
+<code class="sig-name descname">central</code><a class="headerlink" href="#grafo.Node.central" title="Permalink to this definition">¶</a></dt>
+                                            <dd>
+                                                <p>self.osmid = “”</p>
+                                            </dd>
+                                        </dl>
+
+                                    </dd>
+                                </dl>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <footer>
+                        <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+                            <a href="operaciones_grafo.html" class="btn btn-neutral float-right" title="operaciones_grafo module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+                            <a href="modules.html" class="btn btn-neutral float-left" title="src" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+                        </div>
+
+                        <hr/>
+
+                        <div role="contentinfo">
+                            <p>
+                                &#169; Copyright 2021, Luis Santiyán García, Jesus Santiyán Reviriego, Alejandro Ruiz Aranda.
+
+                            </p>
+                        </div>
+
+
+
+                        Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+
+                        <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script type="text/javascript">
+        jQuery(function() {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

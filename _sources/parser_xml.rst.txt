@@ -1,0 +1,7 @@
+parser\_xml module
+==================
+
+.. automodule:: parser_xml
+   :members:
+   :undoc-members:
+   :show-inheritance:
